@@ -17,3 +17,19 @@ Actual shipping times frequently deviate from scheduled delivery windows, creati
 * Data Visualization (Matplotlib, Seaborn)
 * Jupyter Notebook
 
+# Data Processing & Cleaning
+The analysis involved a rigorous cleaning pipeline to ensure reliable insights:
+* Feature Engineering: Standardized date formats for order date and shipping date to calculate real vs. scheduled shipping durations.
+* Data Refinement: Removed over 30 redundant or high-cardinality features (e.g., Customer Email, Product Image, Zipcodes) to focus on impactful variables.
+* Noise Reduction: Filtered out "Shipping Canceled" orders to prevent skewed performance metrics.
+
+# Project Structure
+*  Exploratory Data Analysis (EDA): Profiling the dataset (129,519 rows, 20 optimized columns) to understand the distribution of delivery statuses.
+* Profitability Analysis: Examining the relationship between Order Item Profit Ratio and Late_delivery_risk.
+* Visualization: Using Seaborn and Matplotlib to create professional-grade heatmaps and trend charts for regional performance.
+
+# How to Run
+* Ensure you have the datasetsupply.csv file available in your environment.
+* Install the required dependencies: pip install pandas numpy matplotlib seaborn
+* Open SupplyChainAnalysis.ipynb and execute the cells sequentially to reproduce the findings.
+
